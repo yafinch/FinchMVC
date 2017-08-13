@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    @Html.Partial("LeftSideBarPartial")
+    @Html.Partial("RightSideBarPartial")
+    @Html.Partial("TopSidebarPartial")
+    <div class="pusher">
+        @Html.Partial("NavPartial")
+
+        <div class="ui main container">
+            @RenderBody()
+        </div>
+
+        @Html.Partial("FooterPartial")
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/semantic")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿<div id="top-nav-bar" class="ui inverted top sticky menu">
+    <a class="left-sidebar-toggle icon item"><i class="sidebar icon"></i></a>
+    <div class="header item">Top bar</div>
+    @Html.ActionLink("Home", "Index", "Home", new { @class = "item" })
+    @Html.ActionLink("About", "About", "Home", new { @class = "item" })
+    @Html.ActionLink("Contact", "Contact", "Home", new { @class = "item" })
+    <div class="right menu">
+        <a class="top-sidebar-toggle icon item"><i class="arrow up icon"></i></a>
+        <a class="right-sidebar-toggle icon item"><i class="arrow right icon"></i></a>
+    </div>
+</div>
